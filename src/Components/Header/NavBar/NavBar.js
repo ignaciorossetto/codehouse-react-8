@@ -19,21 +19,15 @@ function NavBar() {
             id="basic-nav-dropdown"
             style={styles.navdropdown}
           >
-            <NavDropdown.Item className="navlinks" href="#">
-              <NavLink to="/products/category/almohadon">
+              <NavLink to="/products/category/almohadon" className="navlinks">
                 <p>Almohadones</p>
               </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item className="navlinks" href="#">
-              <NavLink to="/products/category/bolso">
+              <NavLink to="/products/category/bolso" className="navlinks">
                 <p>Bolsos</p>
               </NavLink>
-            </NavDropdown.Item>
-            <NavDropdown.Item className="navlinks" href="#">
-              <NavLink to="/products/category/ropadecama">
+              <NavLink to="/products/category/ropadecama" className="navlinks">
                 <p>Ropa de cama</p>
               </NavLink>
-            </NavDropdown.Item>
           </NavDropdown>
         </li>
         <li>
