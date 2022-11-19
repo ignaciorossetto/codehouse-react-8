@@ -1,0 +1,105 @@
+.margins{
+    margin: 0px 25px
+}
+
+
+.index__main__title {
+    
+    margin-left: 25px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+}
+
+.index__main__p {
+    margin: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    text-indent: 1%;
+
+}
+
+
+.galeriahome {
+    display: grid;
+    grid-template-areas: "galeriahome__img1 galeriahome__img2 galeriahome__img2"
+        "galeriahome__img1 galeriahome__img3 galeriahome__img3";
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px 250px;
+    grid-gap: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.galeriahome_common {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    transition: all 0.2s;
+    transform: scale(1.0);
+
+}
+.galeriahome_common a{
+
+    text-decoration: none;
+
+}
+
+.galeriahome_common:hover {
+
+    transition: all 0.2s;
+    transform: scale(1.01);
+
+}
+
+.galeriahome__img1 {
+    grid-area: galeriahome__img1;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/galeria%2Fbolso.jpg?alt=media&token=b72ec18f-6e7a-4f85-80d3-f18de93c1158');
+    background-size: cover;
+    background-position: center 80%;
+}
+
+.galeriahome__img2 {
+    grid-area: galeriahome__img2;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/galeria%2Fgeneral.jpg?alt=media&token=7083f711-2e11-4f2a-b809-04e19ecb13ec");
+    background-size: cover;
+    background-position: left 10%;
+
+
+}
+
+.galeriahome__img3 {
+    grid-area: galeriahome__img3;
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/galeria%2Fropa.jpg?alt=media&token=dec99b84-7bdd-42ac-a388-676f00006d7c");
+    background-size: cover;
+    background-position: right 49%;
+    align-content: center
+}
+
+.galeriahome_common__text {
+    font-size: 50px;
+}
+
+.galeriahome_common__text__comprar {
+    font-size: 25px;
+}
+
+.galeriahome__common__ {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.772);
+}
+
+.galeriahome__common__:hover {
+    transition: all 0.5s;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.942);
+}

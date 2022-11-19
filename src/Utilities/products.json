@@ -1,0 +1,310 @@
+[
+    {
+      "product_id": 1,
+      "name": "Almohadon 1",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_caracol_b_b.jpg?alt=media&token=fe0b2215-2970-415b-8abf-5db2775f8864",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 2,
+      "name": "Almohadon 2",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 0,
+      "image":  "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_caracol_b_b_flecos.jpg?alt=media&token=7369f17a-a532-4bf5-b964-aefd77821f2a",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 3,
+      "name": "Almohadon 3",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 2,
+      "image":  "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_caracol_n_n_flecos.jpg?alt=media&token=deed158d-29be-486c-91df-53a600da7140",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 4,
+      "name": "Almohadon 4",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_mediapluma_b_b.jpg?alt=media&token=3d038c11-7445-4553-a851-25d59237125b",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 5,
+      "name": "Almohadon 5",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 2,
+      "image":  "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_mediapluma_b_b_flecos.jpg?alt=media&token=5fc748fa-83a8-4b58-a5fa-6d1176f12eeb",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 6,
+      "name": "Almohadon 6",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_mediapluma_b_n.jpg?alt=media&token=f27bfda7-6bc4-4276-a738-3152a9ecfba8",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 7,
+      "name": "Almohadon 7",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_mediapluma_n_n.jpg?alt=media&token=19adc84c-d1a4-4d00-931f-2e0f235d0f3d",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 8,
+      "name": "Almohadon 8",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 10,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_pluma_b_b_flecos.jpg?alt=media&token=ae962dfa-e864-4a6a-8ee4-6333c76b34e8",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 9,
+      "name": "Almohadon 9",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 6,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_pluma_b_n.jpg?alt=media&token=da5fce69-4625-4b84-b5a9-a3ad3d83cd2c",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 10,
+      "name": "Almohadon 10",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 5,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_pluma_b_n_flecos.jpg?alt=media&token=5fa66c2b-d7a3-4895-9cf1-36d6f2e13209",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 11,
+      "name": "Almohadon 11",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_pluma_n_b_flecos.jpg?alt=media&token=d5049545-e168-43b8-8b28-b30fef1aa005",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 12,
+      "name": "Almohadon 12",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/almohadones%2Falmohadon_pluma_n_n_flecos.jpg?alt=media&token=7e8bb107-346d-47f9-be95-21fa0c261432",
+      "stockAvailability": true,
+      "category": "almohadon",
+      "oferta": false
+    },
+    {
+      "product_id": 16,
+      "name": "Bolso 1",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__1.jpeg?alt=media&token=99707138-02e7-4612-ad68-8c5f495e429c",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    },
+    {
+      "product_id": 17,
+      "name": "Bolso 2",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__2.jpeg?alt=media&token=54e0e4f3-6efc-49e8-afea-7141c5b8d1b2",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    },
+    {
+      "product_id": 18,
+      "name": "Bolso 3",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__3.jpeg?alt=media&token=42a1ab2a-0b6f-4ae9-9241-f3ff9e35c463",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    },
+    {
+      "product_id": 19,
+      "name": "Bolso 4",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__4.jpeg?alt=media&token=01a41d69-e97a-414b-8a43-e4d72da95278",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    },
+    {
+      "product_id": 20,
+      "name": "Bolso 5",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__5.jpeg?alt=media&token=34052891-1002-4e26-a588-0618fa4153c2",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 21,
+      "name": "Bolso 6",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__6.jpeg?alt=media&token=831ca7db-d8d5-4b41-b07a-8dea659a1273",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 22,
+      "name": "Bolso 7",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__7.jpeg?alt=media&token=501ec422-9cf0-4d50-bdd3-bc82f2bab268",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 23,
+      "name": "Bolso 8",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__8.jpeg?alt=media&token=639d26cb-6bec-4e6b-a56e-fa39f94bfa1c",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 24,
+      "name": "Bolso 9",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__9.jpeg?alt=media&token=f3c5c410-576a-4532-83f3-bc46a90382da",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 25,
+      "name": "Bolso 10",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__10.jpeg?alt=media&token=040be272-9c4a-4bc1-9a90-8763691cdbf4",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 26,
+      "name": "Bolso 11",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__11.jpeg?alt=media&token=ecb0cc54-f2a5-4c7c-8d8b-b0451e6ecb0c",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 27,
+      "name": "Bolso 12",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__12.jpeg?alt=media&token=5c95f371-3d17-46ee-97da-d3bdeebf75ed",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 28,
+      "name": "Bolso 13",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__13.jpeg?alt=media&token=e262e94a-2c8f-4b49-9f35-4cfa16dae8e8",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 29,
+      "name": "Bolso 14",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__14.jpeg?alt=media&token=c6494681-960e-472b-b2e9-91f2b7cb7833",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+    ,
+    {
+      "product_id": 30,
+      "name": "Bolso 15",
+      "size": "Medidas 60x60",
+      "price": 10000,
+      "stock": 3,
+      "image": "https://firebasestorage.googleapis.com/v0/b/karam-hecho-a-mano-4fe73.appspot.com/o/bolsos%2Fbolso__15.jpeg?alt=media&token=832b73b3-c4d7-46e0-ad5f-c8073e9887db",
+      "stockAvailability": true,
+      "category": "bolso",
+      "oferta": false
+    }
+  ]
+  

@@ -1,0 +1,16 @@
+a{
+    color:black!important;
+}
+
+a:hover .wappIcon{
+    transition:0.3s;
+    color: rgba(65, 133, 65, 0.892);
+}
+a:hover .facebookIcon{
+    transition:0.3s;
+    color: rgba(28, 53, 162, 0.892);
+}
+a:hover .instagramIcon{
+    transition:0.3s;
+    color: rgba(128, 27, 106, 0.892);
+}

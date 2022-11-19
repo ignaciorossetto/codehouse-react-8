@@ -1,0 +1,15 @@
+.proximamente__main {
+    display: inline;
+    align-items: center!important;
+    font-size: 100px;
+    margin-top: 500px;
+  }
+  
+  .proximamente__main h1 {
+    text-align: center;
+  }
+  
+  .proximamente__main h1 {
+    margin: 100px;
+    font-size: 75px;
+  }

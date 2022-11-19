@@ -1,0 +1,7 @@
+.shopCart{
+    background-color: transparent!important;
+    color: black!important;
+    border: none!important;
+    --bs-btn-padding-x: 0rem!important;
+    --bs-btn-padding-y: 0rem!important;
+}

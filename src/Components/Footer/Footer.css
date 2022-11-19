@@ -1,0 +1,40 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 250px;
+    /* position: absolute; */
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footerContainerLeft{
+    
+    width:33%;
+    text-align:center;
+}
+.footerContainerCenter{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    width:33%;
+    text-align:center;
+
+}
+.footerContainerRight{
+    
+    width:33%;
+    text-align:center;
+    vertical-align:bottom;
+}
+
+.volverArribaBtn{
+    font-weight:bold;
+    font-size:20px;
+}
+
+.volverArribaBtn:hover{
+    color:black;
+}
