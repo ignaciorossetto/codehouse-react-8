@@ -9,6 +9,8 @@ import Nosotros from "./Components/Nosotros/Nosotros";
 import Contacto from "./Components/Contacto/Contacto";
 import Proximamente from "./Components/Proximamente/Proximamente";
 import CartProvider from "./Context/CartContext/CartContext";
+import CheckOut from "./Components/CheckOut/CheckOut";
+import PaymentInfo from "./Components/PaymentInfo/PaymentInfo";
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
             <Route path="/product/:id" element={<ItemDetailContainer />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/contacto" element={<Contacto />} />
-            <Route path="/cart" element={<Proximamente />} />
+            <Route path="/checkout" element={<CheckOut />} />
+            <Route path="/checkout/payment" element={<PaymentInfo />} />
           </Routes>
           <Footer />
         </CartProvider>

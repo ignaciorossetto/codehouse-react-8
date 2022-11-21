@@ -7,6 +7,7 @@ const CartProvider = ({ children }) => {
     const [cartQuantity, setCartQuantity] = useState(0)
     const [cartTotal, setCartTotal] = useState(0)
     const [freeShipping, setFreeShipping] = useState(20000)
+    const [clientInfo, setClientInfo] = useState({})
 
 
 
@@ -70,7 +71,7 @@ const CartProvider = ({ children }) => {
     }
 
 
-    return (<CartContext.Provider value={{addToCart, cart, cartQuantity, deleteCart, deleteItem, cartTotal, freeShipping }}>
+    return (<CartContext.Provider value={{addToCart, cart, cartQuantity, deleteCart, deleteItem, cartTotal, freeShipping, setClientInfo, clientInfo }}>
         {children}
     </CartContext.Provider>)
 }
