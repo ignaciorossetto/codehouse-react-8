@@ -31,7 +31,7 @@ const ShippingInfo = () => {
     const form = event.target;
     for (let index = 0; index < form.length; index++) {
       const element = form[index];
-      if (element.tagName === "INPUT") {
+      if (element.tagName === "INPUT" && element.type !== 'checkbox') {
         clientInfo = {...clientInfo, [element.name]: element.value}
       }
     }
@@ -58,6 +58,7 @@ const ShippingInfo = () => {
           <Form.Label>Eliga el metodo de envio!</Form.Label>
           <br />
           <Form.Check
+            name="envioadomiciliciocheck"
             inline
             type={"checkbox"}
             id={`enviodomicilioCheckbox`}
@@ -66,6 +67,7 @@ const ShippingInfo = () => {
             checked={envioDomBool}
           />
           <Form.Check
+            name="retirocheck"
             inline
             type={"checkbox"}
             id={`retirocheckbox`}
@@ -92,6 +94,7 @@ const ShippingInfo = () => {
             </Form.Group>
             <Form.Group style={{ marginBottom: "25px" }}>
               <Form.Check
+                name="deptocheck"
                 inline
                 type={"checkbox"}
                 id={`vivoendepto`}

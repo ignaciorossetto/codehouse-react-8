@@ -1,7 +1,20 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import './Contacto.css'
+import emailjs from '@emailjs/browser'
 
 const Contacto = () => {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_krctsvq', 'template_buskb9w', form.current, 'KW1MKjMeKUJvyK3_i')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <div className="contacto margins">
         <div className="contacto__titulo">
@@ -10,19 +23,19 @@ const Contacto = () => {
         <div className="contacto__flex">
             <div className="contacto__form ">
 
-                <form action="" method="post" encType="text/plain">
+                <form action="" method="post" encType="text/plain" ref={form} onSubmit={sendEmail}>
                     <div className="contacto__form__name">
-                        <input type="text" placeholder="Nombre" required/>
+                        <input type="text" placeholder="Nombre" required name="user_name"/>
                     </div>
                     <div className="contacto__form__email">
-                        <input type="text" placeholder="E-mail" required/>
+                        <input type="text" placeholder="E-mail" required name="user_email"/>
                     </div>
-                    <div className="contacto__form__celphone">
-                        <input type="text" placeholder="Celular de contacto" required/>
+                    <div className="contacto__form__celphone" >
+                        <input type="text" placeholder="Celular de contacto" required name="user_celphone"/>
                     </div>
                     <div className="contacto__form__textarea">
-                        <textarea name="" className="" cols="30" rows="10" maxLength="2000"
-                            placeholder="Escribe aqui tu consulta!"></textarea>
+                        <textarea name="message"  className="" cols="30" rows="10" maxLength="2000"
+                            placeholder="Escribe aqui tu consulta!" ></textarea>
                     </div>
                     <div className="contacto__form__submit">
                         <input type="submit" value="Enviar consulta!"/>
@@ -43,7 +56,7 @@ const Contacto = () => {
                 <div>
                     <h3 className="contacto__map__tituloinf">Locales!</h3>
                     <select name="" id="" className="contacto__map__select">
-                        <option value="asdad" aria-placeholder="Hola">Cordoba</option>
+                        <option value="asdad" >Cordoba</option>
                         <option value="asdad">Buenos Aires</option>
                         <option value="asdad">Rosario</option>
                     </select>
