@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from "react";
 import ItemDetail from "./ItemDetail/ItemDetail";
-import { customFetchById } from "../../Utilities/customFetch";
 import SpinnerComponent from "../Spinner/Spinner";
 import { useParams } from "react-router-dom";
+import { db } from "../../Utilities/firebase/firebase";
+import {collection, doc, getDoc} from 'firebase/firestore'
 
 const ItemDetailContainer = () => {
-  const products = require("../../Utilities/products.json");
   const { id } = useParams();
   const [singleProduct, setSingleProduct] = useState([]);
 
   useEffect(() => {
-    customFetchById(products, 2000, parseInt(id)).then((res) => {
-      setSingleProduct(res[0]);
-    });
+    const docSnap = async () => {
+      const col = collection(db, "products");
+      const docRef = doc(col, id);
+      const document = await getDoc(docRef);
+      setSingleProduct({ ...document.data(), id: document.id });
+    };
+
+    docSnap();
   }, [id]);
 
 

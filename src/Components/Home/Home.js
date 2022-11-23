@@ -1,9 +1,27 @@
 import React from 'react'
 import './Home.css'
 import { Link } from 'react-router-dom'
+import {useSearchParams } from 'react-router-dom'
+import { toast, ToastContainer } from "react-toastify";
+
 
 
 const Home = () => {
+    const [searchParams, setSearchParams] = useSearchParams()
+    if(searchParams.get("state") !== null) {
+        toast.success(`Gracias por su compra! Le enviaremos un mail con los pasos a seguir.
+         NRO ORDEN ${searchParams.get('orderdnr')}`, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: false,
+            progress: undefined,
+            theme: "light",
+          })
+    }
+    
 
   return (
     <main className="index margins">
@@ -36,6 +54,7 @@ const Home = () => {
                 </Link>
             </div>
         </div>
+        <ToastContainer/>
 
     </main>
   )

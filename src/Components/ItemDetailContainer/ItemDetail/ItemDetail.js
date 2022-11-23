@@ -10,7 +10,7 @@ const ItemDetail = ({ singleProduct }) => {
   const {addToCart} = useContext(CartContext)
 
   const handleClickedChild = (value) => {
-    addToCart(singleProduct.singleProduct_id, singleProduct.name, singleProduct.price, singleProduct.image, value)
+    addToCart(singleProduct.product_id, singleProduct.name, singleProduct.price, singleProduct.image, value, singleProduct.id)
   };
 
 
