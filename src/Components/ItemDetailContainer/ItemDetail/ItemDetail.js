@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
 import Card from "react-bootstrap/Card";
 import ItemCounter from "../../ItemCounter/ItemCounter";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
@@ -7,11 +7,37 @@ import { CartContext } from "../../../Context/CartContext/CartContext";
 
 const ItemDetail = ({ singleProduct }) => {
 
-  const {addToCart} = useContext(CartContext)
+  const { addToCart, deleteItemInfo, cart, setDeleteItemInfo, deleteAllCartBool, deleteAllItems, setDeleteAllCartBool, setDeleteAllItems } = useContext(CartContext);
+  let [sstock , setSstock] = useState(singleProduct.stock)
+
 
   const handleClickedChild = (value) => {
-    addToCart(singleProduct.product_id, singleProduct.name, singleProduct.price, singleProduct.image, value, singleProduct.id)
+    addToCart(
+      singleProduct.product_id,
+      singleProduct.name,
+      singleProduct.price,
+      singleProduct.image,
+      value,
+      singleProduct.id
+    );
+    setSstock(singleProduct.stock -= value)
   };
+
+  useEffect(()=>{
+    if(deleteItemInfo === singleProduct.product_id){
+      setSstock(singleProduct.stock += 1)
+      setDeleteItemInfo()
+    }
+    if(deleteAllCartBool === true) {
+      const index = deleteAllItems.findIndex(({product_id})=> product_id === singleProduct.product_id)
+      if(index !== -1){
+        const value = deleteAllItems[index].quantity
+        setSstock(singleProduct.stock += value)
+      }
+      setDeleteAllCartBool(false)
+      setDeleteAllItems([])
+    }
+  }, [cart])
 
 
 
@@ -42,7 +68,7 @@ const ItemDetail = ({ singleProduct }) => {
           <Card.Title as="h1">{singleProduct.name}</Card.Title>
           <Card.Text>PRECIO: ${singleProduct.price.toLocaleString()}</Card.Text>
           <Card.Text>{singleProduct.size}</Card.Text>
-          <ItemCounter stock={singleProduct.stock} handler={handleClickedChild}/>
+          <ItemCounter stock={sstock} handler={handleClickedChild}/>
         </Card.Body>
       </Card>
     </div>

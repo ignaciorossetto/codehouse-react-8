@@ -14,7 +14,7 @@ function CartModal() {
   };
   const handleShow = () => setShow(true);
 
-  const { cart, deleteCart, deleteItem, cartTotal, freeShipping, deleteAllItems } =
+  const { cart, deleteCart, deleteItem, cartTotal, freeShipping } =
     useContext(CartContext);
 
   return (
@@ -119,7 +119,6 @@ function CartModal() {
           ) : (
             ""
           )}
-          <button onClick={()=> console.log(deleteAllItems)}>asdsa</button>
         </Modal.Footer>
       </Modal>
     </>

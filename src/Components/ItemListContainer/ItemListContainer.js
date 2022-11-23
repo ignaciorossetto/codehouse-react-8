@@ -1,14 +1,12 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import ItemList from "./ItemList/ItemList";
 import SpinnerComponent from "../Spinner/Spinner";
 import { useParams } from "react-router-dom";
 import { db } from "../../Utilities/firebase/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
-import { CartContext } from "../../Context/CartContext/CartContext";
 
 function ItemListContainer() {
 
-  const {productCopy1} = useContext(CartContext)
   const [productList, setProductList] = useState([]);
   const [itemListBool, setItemListBool] = useState(false);
 
@@ -42,7 +40,6 @@ function ItemListContainer() {
           </div>
         )}
       </div>
-      <button onClick={()=>{console.log(productCopy1)}}>log productCopy</button>
     </>
   );
 }
