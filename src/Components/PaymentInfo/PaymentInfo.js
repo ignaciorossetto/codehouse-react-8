@@ -6,7 +6,6 @@ import { Button } from "react-bootstrap";
 import { db } from "../../Utilities/firebase/firebase";
 import {
   doc,
-  getDoc,
   serverTimestamp,
   addDoc,
   collection,
@@ -15,6 +14,7 @@ import {
 } from "firebase/firestore";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import { Link, useNavigate } from "react-router-dom";
+import HomeIcon from "@mui/icons-material/Home";
 
 const PaymentInfo = () => {
   const navigate = useNavigate();
@@ -71,7 +71,7 @@ const PaymentInfo = () => {
       );
       deleteClientInfo();
       deleteCart();
-      decreaseStockFromDB()
+      decreaseStockFromDB();
       navigate(`/?state=successtr&orderdnr=${docRef.id}`);
       return;
     }
@@ -88,67 +88,107 @@ const PaymentInfo = () => {
       const docRef = await addDoc(collection(db, "ventas1"), object);
       deleteClientInfo();
       deleteCart();
-      decreaseStockFromDB()
+      decreaseStockFromDB();
       navigate(`/?state=successmp&orderdnr=${docRef.id}`);
       return;
     }
   };
 
   const decreaseStockFromDB = async () => {
-    cart.forEach(async({id, quantity}) => {
+    cart.forEach(async ({ id, quantity }) => {
       const docRef = doc(db, "products", id);
       await updateDoc(docRef, {
-        stock: increment(quantity*-1),
+        stock: increment(quantity * -1),
       });
-    })
-      
-
+    });
   };
 
   return (
     <>
-      <h1 style={{ textAlign: "center", marginBottom: "100px" }}>
-        Elegi el metodo de pago
-      </h1>
-      <div
-        style={{
-          margin: "0px 25px",
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <Link to="/checkout">
-          <KeyboardBackspaceIcon fontSize="large" />
-        </Link>
-        <div>
-          <h1 style={{ marginBottom: "20px" }}>Forma de pago</h1>
-          <Accordion>
-            <Accordion.Item eventKey="0">
-              <Accordion.Header>Mercado Pago!</Accordion.Header>
-              <Accordion.Body>
-                <Button onClick={() => handleClick("mercadopago")}>
-                  Pagar con MercadoPago!
-                </Button>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1" style={{ width: "398px" }}>
-              <Accordion.Header>Transferencia bancaria</Accordion.Header>
-              <Accordion.Body>
-                <p>
-                  Se redirigira a whatsapp para pasarte los datos bancarios!{" "}
-                </p>
-                {/* <Anchor href={`https://wa.me/5493516330434?text=${whatsappMessage()}`} target='_blank'> */}
-                <Button onClick={() => handleClick("transferenciabancaria")}>
-                  Confirmar compra!
-                </Button>
-                {/* </Anchor> */}
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-        <CartSummary />
-      </div>
+      {cart.length === 0 ? (
+        <>
+          <h1
+            style={{
+              textAlign: "center",
+              marginBottom: "50px",
+              marginTop: "75px",
+            }}
+          >
+            Error, no hay nada en el carrito!
+          </h1>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "center",
+              textAlign: "end",
+              marginBottom: "50px",
+              marginRight: "75px",
+            }}
+          >
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <h2 style={{ marginRight: "5px" }}>Ir a </h2>
+            </Link>
+            <Link to="/">
+              <HomeIcon fontSize="large" />
+            </Link>
+          </div>
+        </>
+      ) : (
+        <>
+          <h1
+            style={{
+              textAlign: "center",
+              marginBottom: "100px",
+              marginTop: "75px",
+            }}
+          >
+            Elegi el metodo de pago
+          </h1>
+          <div
+            style={{
+              margin: "0px 25px",
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-evenly",
+            }}
+          >
+            <Link to="/checkout">
+              <KeyboardBackspaceIcon fontSize="large" />
+            </Link>
+            <div>
+              <h1 style={{ marginBottom: "20px" }}>Forma de pago</h1>
+              <Accordion>
+                <Accordion.Item eventKey="0">
+                  <Accordion.Header>Mercado Pago!</Accordion.Header>
+                  <Accordion.Body>
+                    <Button onClick={() => handleClick("mercadopago")}>
+                      Pagar con MercadoPago!
+                    </Button>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1" style={{ width: "398px" }}>
+                  <Accordion.Header>Transferencia bancaria</Accordion.Header>
+                  <Accordion.Body>
+                    <p>
+                      Se redirigira a whatsapp para pasarte los datos bancarios!{" "}
+                    </p>
+                    {/* <Anchor href={`https://wa.me/5493516330434?text=${whatsappMessage()}`} target='_blank'> */}
+                    <Button
+                      onClick={() => handleClick("transferenciabancaria")}
+                    >
+                      Confirmar compra!
+                    </Button>
+                    {/* </Anchor> */}
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </div>
+            <CartSummary />
+          </div>
+        </>
+      )}
     </>
   );
 };
