@@ -1,7 +1,1 @@
-TP 8
-
-UseContext
-LocalStorage
-Modal // Cart view
-
-
+PROYECTO E-COMMERCE REACT.JS + FIREBASE
